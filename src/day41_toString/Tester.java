@@ -20,7 +20,7 @@ public class Tester {
 
 }
 
-class TesterObject{
+class TesterObject{     // should be used for ease of sharing codes on slack, preferred way is to create separate classes for each file
 
     public static void main(String[] args) {
 
