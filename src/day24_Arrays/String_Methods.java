@@ -28,7 +28,7 @@ public class String_Methods {
 
         System.out.println("==================================");
 
-        // .split(): splits the array from the given value, (RETURNS String)
+        // .split(): splits the array from the given value, (RETURNS StringArray)
 
         String sentence = "I Love Programming Language";
 
