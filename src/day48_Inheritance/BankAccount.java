@@ -19,9 +19,9 @@ public class BankAccount {
     private String accountHolder;
     private long accountNumber;
     private double balance;
+    static String bankName;
 
     static {
-        String bankName;
         bankName = "Bank of America";
     }
 
@@ -60,16 +60,33 @@ public class BankAccount {
     }
 
     public void withdraw(double amount) {
-        if (amount > balance) {
-            System.out.println("Not Enough Balance");
-            return;
+        if (amount > 0) {
+
+            System.out.println("Withdrawing $" + amount + " from " + accountNumber);
+            balance -= amount;
+
+            if (amount > balance) {
+                System.out.println("Not Enough Balance");
+                return;
+            }
+
+        } else {
+            System.out.println("Invalid Amount");
         }
-        System.out.println("Withdrawing $" + amount + " from " + accountNumber);
-        balance -= amount;
+
     }
 
     public void availableBalance(){
         System.out.println("Available balance is $" + getBalance());
+    }
+
+    public String toString(){
+        return bankName +
+                "\n==================================================="+
+                "\n"+firstName + " " + lastName +
+                "\nAccount Number: "+getAccountNumber()+
+                "\n==================================================="+
+                "\nBalance: $"+getBalance();
     }
 
 }
