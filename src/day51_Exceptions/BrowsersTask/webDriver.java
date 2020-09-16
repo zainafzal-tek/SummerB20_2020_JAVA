@@ -1,6 +1,6 @@
 package day51_Exceptions.BrowsersTask;
 
-public class WebDriver {
+public class webDriver {
 
     /*
 1. create a class called WebDriver
@@ -8,7 +8,7 @@ public class WebDriver {
                      close(): closes the default browser
  */
 
-    public class Webdriver {
+    public class WebDriver {
 
         protected void get(String url) {
             System.out.println("Opening the " + url + " in default browser");

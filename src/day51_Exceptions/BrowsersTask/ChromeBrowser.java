@@ -1,6 +1,6 @@
 package day51_Exceptions.BrowsersTask;
 
-public class ChromeBrowser extends WebDriver {
+public class ChromeBrowser extends webDriver {
 
         /*
     get(url), close()
