@@ -5,6 +5,11 @@ public final class Circle extends Shape {
     public double radius;
 
     public Circle(double radius){
+
+        if (radius <= 0){
+            throw new ArithmeticException("Radius cannot be zero!");
+        }
+
         this.radius = radius;
         area = calculateArea();
         perimeter = calculatePerimeter();
