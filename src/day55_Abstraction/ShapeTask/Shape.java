@@ -2,10 +2,10 @@ package day55_Abstraction.ShapeTask;
 
 public abstract class Shape {
 
-    public static String name;
+    public  String name;
     public double area;
     public double perimeter;
-    public static boolean hasVolume;
+    public  boolean hasVolume;
     public double volume;
 
     public abstract double calculateArea();

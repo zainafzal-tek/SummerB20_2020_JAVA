@@ -11,17 +11,19 @@ public final class Cylinder extends Shape {
     public double radius;
     public double height;
 
-    static {
-        name = "Cylinder";
-        hasVolume = true;
-    }
 
     public Cylinder(double radius, double height){
+        if (radius <= 0 ||  height <= 0){
+            throw new ArithmeticException("Radius and height cannot be zero!");
+        }
+
         this.radius = radius;
         this.height = height;
         area = calculateArea();
         perimeter = calculatePerimeter();
         volume = calculateVolume();
+        name = "Cylinder";
+        hasVolume = false;
     }
 
     @Override

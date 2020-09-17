@@ -5,17 +5,18 @@ public final class Rectangle extends Shape {
     public double length;
     public double width;
 
-    static {
-        name = "Rectangle";
-        hasVolume = false;
-    }
-
     public Rectangle(double length, double width){
+        if (length <= 0 || width <= 0){
+            throw new ArithmeticException("Length and width cannot be zero or negative!");
+        }
+
         this.length = length;
         this.width = width;
         area = calculateArea();
         perimeter = calculatePerimeter();
         volume = calculateVolume();
+        hasVolume = false;
+        name = "Rectangle";
     }
 
     @Override
