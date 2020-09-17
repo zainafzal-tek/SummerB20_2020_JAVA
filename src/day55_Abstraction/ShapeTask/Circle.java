@@ -7,7 +7,7 @@ public final class Circle extends Shape {
     public Circle(double radius){
 
         if (radius <= 0){
-            throw new ArithmeticException("Radius cannot be zero!");
+            throw new ArithmeticException("Radius cannot be zero or negative!");
         }
 
         this.radius = radius;
