@@ -25,7 +25,7 @@ public abstract class InterfacePractice {
 
 
     public abstract void method4(); // abstract method
-   // void method5(); // abstract method
+    abstract void method5(); // abstract method
 
     // static{ } // static block
 
