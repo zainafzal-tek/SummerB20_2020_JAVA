@@ -40,6 +40,11 @@ public class InstanceOf_Keyword {
         Shape shape1 = new Rectangle(3, 5);
         identifyShape(shape1);
 
+        Circle c1 = new Circle(3);
+        Circle c2 = new Circle(5);
+
+        System.out.println(equalShape(c1, c2));
+
     }
 
     public static void identifyShape(Shape shape){
@@ -51,6 +56,43 @@ public class InstanceOf_Keyword {
             System.out.println("The shape is rectangle");
         }
 
+    }
+
+    public static boolean equalShape(Shape shape1, Shape shape2){
+        boolean result = false;
+
+        boolean bothCircle = shape1 instanceof Circle && shape2 instanceof Circle;
+        boolean bothRectangle = shape1 instanceof Rectangle && shape2 instanceof Rectangle;
+        boolean bothCylinder = shape1 instanceof Cylinder && shape2 instanceof Cylinder;
+
+        if (bothCircle){
+            Circle c1 = (Circle) shape1;
+            Circle c2 = (Circle) shape2;
+
+            if (c1.radius == c2.radius){
+                result = true;
+            }
+        }
+
+        if (bothRectangle){
+            Rectangle r1 =  (Rectangle) shape1;
+            Rectangle r2 = (Rectangle) shape2;
+
+            if (r1.width == r2.width && r1.length == r2.length){
+                result = true;
+            }
+        }
+
+        if (bothCylinder){
+            Cylinder cyl1 = (Cylinder) shape1;
+            Cylinder cyl2 = (Cylinder) shape2;
+
+            if (cyl1.volume == cyl2.volume){
+                result = true;
+            }
+        }
+
+        return result;
     }
 
 }
