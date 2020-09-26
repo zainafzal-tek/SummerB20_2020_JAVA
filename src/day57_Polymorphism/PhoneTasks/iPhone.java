@@ -11,21 +11,21 @@ public class iPhone extends Phone implements AppleApp, Downloadable {
 
     @Override
     public void texting(long phoneNumber) {
-        System.out.println(model + " is texting " + phoneNumber);
+        System.out.println(brand + model + " is texting " + phoneNumber);
     }
 
     @Override
     public void calling(long phoneNUmber) {
-        System.out.println(model + " is calling" + phoneNUmber);
+        System.out.println(brand + model + " is calling" + phoneNUmber);
     }
 
     @Override
     public void download() {
-        System.out.println(model + " is downloading from " + appStoreName);
+        System.out.println(brand + model + " is downloading from " + appStoreName);
     }
 
     public void faceTiming(long phoneNumber){
-        System.out.println(model + " is facetiming " + phoneNumber);
+        System.out.println(brand + model + " is facetiming " + phoneNumber);
     }
 
     @Override

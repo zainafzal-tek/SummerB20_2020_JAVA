@@ -11,21 +11,21 @@ public class Samsung extends Phone implements Downloadable, AndroidApp {
 
     @Override
     public void texting(long phoneNumber) {
-        System.out.println(model + " is texting " + phoneNumber);
+        System.out.println(brand + model + " is texting " + phoneNumber);
     }
 
     @Override
     public void calling(long phoneNUmber) {
-        System.out.println(model + " is calling " + phoneNUmber);
+        System.out.println(brand + model + " is calling " + phoneNUmber);
     }
 
     @Override
     public void download() {
-        System.out.println(model + " is downloading " + appStoreName);
+        System.out.println(brand + model + " is downloading " + appStoreName);
     }
 
     public void googleDuo(long phoneNumber){
-        System.out.println(model + " is google duoing " + phoneNumber);
+        System.out.println(brand + model + " is google duoing " + phoneNumber);
     }
 
     @Override
