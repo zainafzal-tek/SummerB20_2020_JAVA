@@ -11,21 +11,21 @@ public class Huawei extends Phone implements AndroidApp, AppleApp, Downloadable{
 
     @Override
     public void texting(long phoneNumber) {
-        System.out.println(model + " is texting " + phoneNumber);
+        System.out.println(brand + " " + model + " is texting " + phoneNumber);
     }
 
     @Override
     public void calling(long phoneNUmber) {
-        System.out.println(model + " is calling " + phoneNUmber);
+        System.out.println(brand + " " + model + " is calling " + phoneNUmber);
     }
 
     @Override
     public void download() {
-        System.out.println(model + " is downloading from both " + AndroidApp.appStoreName + " and " + AppleApp.appStoreName);
+        System.out.println(brand + " " + model + " is downloading from both " + AndroidApp.appStoreName + " and " + AppleApp.appStoreName);
     }
 
     public void stealInfo(){
-        System.out.println(model + " is stealing your information");
+        System.out.println(brand + " " + model + " is stealing your information");
     }
 
     @Override
